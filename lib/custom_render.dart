@@ -37,7 +37,7 @@ CustomRenderMatcher dataUriMatcher({String? encoding = 'base64', String? mime}) 
 };
 
 CustomRenderMatcher networkSourceMatcher({
-  List<String> schemas: const ["https", "http"],
+  List<String> schemas = const ["https", "http"],
   List<String>? domains,
   String? extension,
 }) =>
